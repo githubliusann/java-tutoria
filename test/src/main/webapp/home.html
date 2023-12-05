@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		
+		font-size: 12px;
+		font-family: Arial,sans-serif;
+		list-style: none;
+	}
+	#head{
+		width:100%;
+		height: 100%;
+		position: absolute;
+		z-index: 99;
+		text-align: center;
+	}
+	#left-head{
+		height: 60px;
+		position: absolute;
+		z-index: 100;
+		padding-left: 24px;
+	}
+	.left-head-left-a{
+		margin-right: 24px;
+		margin-top: 19px;
+		display: inline-block;
+		position: relative;
+		color: #222;
+		text-decoration: none;
+	}
+	#right-head{
+		position: absolute;
+		top:0;
+		right:0;
+		z-index: 100;
+		height: 60px;
+		padding-right: 24px;
+		padding-left: 200px;
+	}
+	.right-head-a-mae{
+		width: 95px;
+		height: 28px;
+		position: absolute;
+		top: 16px;
+		right: 162px;
+		display: inline-block;
+		margin-right: -11px;
+	}
+	.right-head-image{
+		width:120px;
+		height:60px;
+		position: absolute;
+		top:-17px;
+		right:0;
+		background-repeat:no-repeat;
+		background-position:right;
+		background-image: url('img/wenxin.png');
+		background-size: 106px 31px;
+	}
+	.right-head-settei{
+		padding-left:12px;
+		margin-left:24px;
+		margin-top: 19px;
+		display: inline-block;
+		position: relative;
+		/*控制行内样式对齐方式*/
+		vertical-align: top;
+		/*鼠标指针悬停样式*/
+		cursor: pointer;
+		color: #222;
+	}
+	.right-head-a-ato{
+		width:44px;
+		height:22px;
+		border-radius:6px;
+		line-height:24px;
+		position: relative;
+		/*元素溢出可见*/
+		overflow: visible;
+		display: inline-block;
+		margin-top: 15px;
+		margin-left: 32px;
+		font-size: 13px;
+		text-decoration: none;
+		color: white;
+		background-color: #4e6ef2;
+	}
+	#middle-image{
+		width:333px;
+		padding-left: 746px;
+	}
+	#middle-form{
+		width:654px;
+		height:44px;
+		border:1px solid black;
+		border-radius:6px;
+		z-index: 1;
+		list-style: none;
+		position: relative;
+		display: block;
+		text-align: left;
+		margin-left: 579px;
+	}
+	.middle-kensaku{
+		width:546px;
+		height:44px;
+	}
+	.kensaku{
+		width:546px;
+		height:41px;
+		border: none;
+		margin-left: 5px;
+	}
+	
+	.middle-right-baiduyixia{
+		position:relative;
+		top:-43px;
+		margin-left:549px;
+		cursor: pointer;
+	    width: 108px;
+	    height: 44px;
+	    line-height: 45px;
+	    padding: 0;
+	    background: 0 0;
+	    background-color: #4e6ef2;
+	    border-radius: 0 10px 10px 0;
+	    font-size: 17px;
+	    color: #fff;
+	    /*移除元素阴影*/
+	    box-shadow: none;
+	    font-weight: 400;
+	    border: none;
+	    /*移除元素轮廓默认样式*/
+	    outline: 0;
+	    text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div id="head">
+		<div id="left-head">
+			<a href="test.html" target="_blank" class="left-head-left-a">新闻</a>
+			<a href="test.html" target="_blank" class="left-head-left-a">hao123</a>
+			<a href="test.html" target="_blank" class="left-head-left-a">地图</a>
+			<a href="test.html" target="_blank" class="left-head-left-a">贴吧</a>
+			<a href="test.html" target="_blank" class="left-head-left-a">视频</a>
+			<a href="test.html" target="_blank" class="left-head-left-a">图片</a>
+			<a href="test.html" target="_blank" class="left-head-left-a">网盘</a>
+			<a href="test.html" target="_blank" class="left-head-left-a">文库</a>
+			<a href="test.html" target="_blank" class="left-head-left-a">更多</a>
+		</div>
+		<div id="right-head">
+			<a href="test.html" target="_blank" class="right-head-a-mae">
+				<div class="right-head-image" style="display: block;"></div>
+			</a>
+			<span class="right-head-settei">设置</span>
+			<a href="test.html" class="right-head-a-ato">登録</a>
+		</div>
+	</div>
+	<div id="middle">
+		<img id="middle-image" alt="" src="img/baidu.png">
+		<form action="" id="middle-form">
+			<span class="middle-kensaku">
+				<input class="kensaku" value maxlength="6">
+				<input class="middle-right-baiduyixia" value="百度一下"> 
+			</span>
+		</form>
+		
+	</div>
+</body>
+</html>
