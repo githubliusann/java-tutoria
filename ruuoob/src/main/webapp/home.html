@@ -76,6 +76,64 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	#nav{
+		/*字母转成大写*/
+		text-transform: uppercase;
+		padding: 10px 0 0 20px;
+	    height: 28px;
+	    font-size: 1.2em;
+	}
+	#nav-nav{
+		display: block;
+		/*块级元素在其块轴方向上的顶部外边距*/
+	    margin-block-start: 1em;
+	    margin-block-end: 1em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	    padding-inline-start: 40px;
+	    margin-top: -8px;
+	    margin-left: 271px;
+	}
+	#nav-nav li{
+		display: inline;
+    	margin: 0 20px 0 0;
+    	/*1.5em 表示行高是当前字体大小的1.5倍*/
+    	line-height: 1.5em;
+    	text-align: center;
+	}
+	#nav-nav a{
+		color: #fff;
+		padding: 10px 0 10px 0;
+    	text-decoration: none;
+    	font-size: 14.4px;
+	}
+	#middle{
+		width: 100%;
+	    max-width: 1260px;
+	    min-width: 755px;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    height: auto !important;
+	}
+	#middle-left-wai{
+		margin-right: 1%;
+	    float: left;
+	    width: 16%;
+	    display: block;
+	    box-sizing: border-box;
+	    border: 1px solid #eee;
+	}
+	#middle-left-top{
+		overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+	.java-left{
+		display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    font-size: inherit;
+	    text-rendering: auto;
+	}
 </style>
 </head>
 <body>
@@ -95,8 +153,75 @@
 			</div>
 		</div>
 	</div>
-	<div id="navigation">
-		
+	<div id="navigation">	
+		<div id="nav">
+			<ul id="nav-nav">
+				<li>
+					<a href="">首页</a>
+				</li>
+				<li>
+					<a href="">HTML</a>
+				</li>
+				<li>
+					<a href="">CSS</a>
+				</li>
+				<li>
+					<a href="">JAVASCRIPT</a>
+				</li>
+				<li>
+					<a href="">VUE</a>
+				</li>
+				<li>
+					<a href="">BOOKSTRAP</a>
+				</li>
+				<li>
+					<a href="">NOODJS</a>
+				</li>
+				<li>
+					<a href="">PYTHON3</a>
+				</li>
+				<li>
+					<a href="">PYTHON2</a>
+				</li>
+				<li>
+					<a href="">JAVA</a>
+				</li>
+				<li>
+					<a href="">C</a>
+				</li>
+				<li>
+					<a href="">C++</a>
+				</li>
+				<li>
+					<a href="">C#</a>
+				</li>
+				<li>
+					<a href="">GO</a>
+				</li>
+				<li>
+					<a href="">SQL</a>
+				</li>
+				<li>
+					<a href="">LINUS</a>
+				</li>
+				<li>
+					<a href="">JQUARY</a>
+				</li>
+				<li>
+					<a href="">本地标签</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="middle">
+		<div id="middle-left-wai">
+			<div id="middle-left">
+				<div id="middle-left-top" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+					<i class="java-left"></i>
+					<span>java教程</span>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
