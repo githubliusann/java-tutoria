@@ -121,7 +121,19 @@
 	    box-sizing: border-box;
 	    border: 1px solid #eee;
 	}
-	
+	.site-fix{
+	    position: fixed;
+	    top: 160px;
+	    bottom: 0;
+	    z-index: 666;
+	    min-height: 0;
+	    overflow: hidden;
+	    background-color: #fff;
+	    border-color: #eee;
+	    overflow-y: visible;
+	    -webkit-overflow-scrolling: touch;
+	    overflow-x: hidden;
+	}
 	#middle-left-top{
 		width:200px;
 		height:39px;
@@ -144,7 +156,6 @@
 	    background-color: #f2f2f2;
 	    display: flex;
   		align-items: center;
-  		margin-top: 27px;
 	}
 	.java-left{
 		display: inline-block;
@@ -166,7 +177,7 @@
 	    text-rendering: auto;
         font-size: 1.33333333em;
 	    line-height: .75em;
-	    vertical-align: -15%
+	    vertical-align: -15%;
  	}
 	#middle-list a{
 	    line-height: 24px;
@@ -176,7 +187,52 @@
 	    padding: 4px;
 	    border-bottom: 1px solid #efefef;
 	    color: #000;
-	    font-size: 14px
+	    font-size: 14px;
+	}
+	#middle-mannaka{
+		width: 68%;
+	    box-sizing: border-box;
+	    float: left;
+	}
+	#middle-mannaka-mannaka{
+		background: #fff;
+	    margin: 0;
+	    border: 1px solid #efefef;
+	    border-bottom: 0;
+	    margin-left: 233px;
+	    margin-top: 29px;
+	    margin-bottom: 20px;
+	}
+	#middle-mannaka-top{
+		width:854px;
+		height:46px;
+	    line-height: 24px;
+	    overflow: hidden;
+	    padding: 10px 30px 10px 30px;
+	    background: #fbfbfb;
+	    border-top: 1px solid #efefef;
+	    border-bottom: 1px solid #efefef;
+	    color: #8590a6;
+	    font-size: 15px;
+	    border: 1px solid #e7eaf1;
+	    box-shadow: 0 1px 3px rgba(0,37,55,.05);
+	    box-sizing: border-box;
+	}
+	#middle-mannaka-top-right{
+		float: right;
+	}
+	#middle-mannaka-top-right a{
+		color: #64854c;
+	    text-decoration: none;
+	}
+	#middle-mannaka-koukoku{
+		width:843px;
+		height:101px;
+		max-height: 98px;
+	    text-align: center;
+	    padding: 4px;
+	    line-height: 101px;
+	    border: 1px solid #efefef;
 	}
 </style>
 </head>
@@ -259,7 +315,7 @@
 	</div>
 	<div id="middle">
 		<div id="middle-left-wai">
-			<div id="middle-left">
+			<div id="middle-left" class="site-fix">
 				<div id="middle-left-top" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
 					<i class="java-left" aria-hidden="true">::</i>
 					<span style="font-size: 14px; margin-left: 9px;">java教程</span>
@@ -319,6 +375,18 @@
 					<a target="_top" title="java" href="">java</a>
 					<a target="_top" title="java" href="">java</a>
 					<a target="_top" title="java" href="">java</a>
+				</div>
+			</div>
+			<div id="middle-mannaka" style="height: auto !important;">
+				<div id="middle-mannaka-mannaka" style="height: auto !important;">
+					<div id="middle-mannaka-top">
+						<div id="middle-mannaka-top-right">
+							<a href="" title="java简介"　rel="next">java简介-></a>
+						</div>
+					</div>
+					<div id="middle-mannaka-koukoku">
+						ここに広告があります
+					</div>
 				</div>
 			</div>
 		</div>
