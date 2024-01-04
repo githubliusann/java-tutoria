@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>跳转页面</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+
+<h1 id="title"></h1>
+<p id="body"></p>
+<footer id="foot"></footer>
+
+<script>
+    $(document).ready(function() {
+        // 发送 Ajax 请求
+        $.ajax({
+            type: 'post',
+            url: '/ruuoob/homeServlet',  // 指定您的 servlet 地址
+            dataType: 'text',
+            success: function(data) {
+                // 成功回调，更新页面元素内容
+                
+                $('#title').text(data.title);
+                $('#body').text(data.body);
+                $('#foot').text(data.foot);
+                alert(data);
+            },
+            error: function(xhr, type) {
+                // 失败回调
+                console.error('Ajax request failed');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
