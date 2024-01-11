@@ -28,7 +28,8 @@ public class homeServlet extends HttpServlet{
 	        request.setAttribute("title", title);
 	        request.setAttribute("body", body);
 	        request.setAttribute("foot", foot);
-	        request.getRequestDispatcher("tiaozhuan.html").forward(request, response);
+	        response.setContentType("text/plain");
+	        request.getRequestDispatcher("tz.jsp").forward(request, response);
 	        System.out.println(request);
         }
     }

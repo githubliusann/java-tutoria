@@ -17,10 +17,9 @@
         // 发送 Ajax 请求
         $.ajax({
             type: 'post',
-            url: '/ruuoob/homeServlet',  // 指定您的 servlet 地址
+            url: '/ruuoob/homeServlet',  
             dataType: 'text',
             success: function(data) {
-                // 成功回调，更新页面元素内容
                 
                 $('#title').text(data.title);
                 $('#body').text(data.body);
