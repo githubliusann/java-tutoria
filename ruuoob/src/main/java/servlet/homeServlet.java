@@ -22,9 +22,10 @@ public class homeServlet extends HttpServlet{
         String a = request.getParameter("test");
         if(a != null && a.equals("test")) {
         	System.out.println("成功");
-	        String title = "title";
-	        String body = "body";
-	        String foot = "foot";
+	        String title = "html30分钟入门";
+	        String body = "\r\n"
+	        		+ "							一旦入门后，你可以从网上找到更多更详细的资料来继续学习。什么是HTML ";
+	        String foot = "HTML是英文Hyper Text Mark-up Language(超文本标记语言)的缩写，它规定了自己的语法规则，用来表示比“文本”更丰富的意义，比如图片，表格...							";
 	        request.setAttribute("title", title);
 	        request.setAttribute("body", body);
 	        request.setAttribute("foot", foot);
